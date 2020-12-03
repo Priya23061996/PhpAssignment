@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$server = 2;
+$load = array(10, 60, 50, 15, 20);
+foreach($load as $value) {
+
+if($value <50)
+$server = floor($server/2);
+else 
+$server = (2*$server)+1;
+}
+echo "$server";
+?>

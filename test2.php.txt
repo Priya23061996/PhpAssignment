@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$items = array(9, 2, 3);
+$price = array(10,15);
+$samosapav=0;
+$vadapav=0;
+$remain=0;
+for ($i=1; $i<=$items[2];$i++) {
+if((2*$i)<=$items[0]) {
+$samosapav=$i;
+$remain = $items[0]-(2*$i);
+}else break;
+}
+for ($i=1; $i<=$remain;$i++) {if((2*$i)<=$remain)
+$vadapav=$i;
+else break;}
+$profit = ($samosapav*15)+($vadapav*10);
+echo "$profit";
+?>
+</body>
+</html>
